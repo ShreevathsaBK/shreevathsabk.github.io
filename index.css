@@ -33,9 +33,119 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle at 50% 0%, #e0f2fe 0%, transparent 50%),
-        radial-gradient(circle at 100% 100%, #f3e8ff 0%, transparent 50%);
+    background-color: #f8fafc;
+    z-index: -2;
+}
+
+.static-code-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
     z-index: -1;
+    overflow: hidden;
+    font-family: 'Fira Code', 'Consolas', 'Courier New', monospace;
+    font-size: 1.1rem;
+}
+
+.code-snippet {
+    position: absolute;
+    font-weight: 600;
+    white-space: nowrap;
+    opacity: 0.4;
+    /* Increased opacity */
+    filter: blur(0.5px);
+    /* Slight blur for depth */
+    transition: all 0.5s ease;
+}
+
+/* Syntax Highlighting (Light Theme Friendly) */
+.kwd {
+    color: #a855f7;
+}
+
+/* Purple */
+.str {
+    color: #10b981;
+}
+
+/* Green */
+.func {
+    color: #3b82f6;
+}
+
+/* Blue */
+.cls {
+    color: #f59e0b;
+}
+
+/* Orange */
+.tag {
+    color: #ef4444;
+}
+
+/* Red */
+.attr {
+    color: #8b5cf6;
+}
+
+/* Violet */
+.var {
+    color: #06b6d4;
+}
+
+/* Cyan */
+.op {
+    color: #64748b;
+}
+
+/* Grey */
+.braces {
+    color: #475569;
+}
+
+/* Dark Grey */
+
+/* Clean Positioning */
+.pos-1 {
+    top: 10%;
+    left: 5%;
+    font-size: 1.1rem;
+}
+
+.pos-2 {
+    top: 15%;
+    right: 5%;
+    font-size: 1.3rem;
+    text-align: right;
+}
+
+.pos-3 {
+    bottom: 10%;
+    left: 5%;
+    font-size: 1rem;
+}
+
+.pos-4 {
+    bottom: 15%;
+    right: 5%;
+    font-size: 1.2rem;
+    text-align: right;
+}
+
+.pos-5 {
+    top: 45%;
+    left: 2%;
+    font-size: 1.5rem;
+}
+
+.pos-6 {
+    top: 55%;
+    right: 2%;
+    font-size: 1.5rem;
+    text-align: right;
 }
 
 .profile-container {
