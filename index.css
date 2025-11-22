@@ -314,3 +314,10 @@ body {
         font-size: 1.75rem;
     }
 }
+
+/* Hide background code on tablets and smaller screens */
+@media (max-width: 900px) {
+    .static-code-bg {
+        display: none;
+    }
+}
